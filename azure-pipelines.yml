@@ -10,14 +10,20 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- task: JavaToolInstaller@0
+  inputs:
+    versionSpec: '11'
+    jdkArchitectureOption: 'x64'
+    jdkSourceOption: 'PreInstalled'
 - task: Gradle@2
   inputs:
     gradleWrapperFile: 'gradlew'
-    workingDirectory: './gradle/wrapper'
     tasks: 'build'
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
-    codeCoverageToolOption: 'Cobertura'
+    codeCoverageToolOption: 'JaCoCo'
     codeCoverageClassFilesDirectories: 'build/classes/main/'
     javaHomeOption: 'JDKVersion'
-    sonarQubeRunAnalysis: false
+    sonarQubeRunAnalysis: true
+    sqGradlePluginVersionChoice: 'specify'
+    sonarQubeGradlePluginVersion: '2.6.1'
