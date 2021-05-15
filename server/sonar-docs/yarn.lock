@@ -7681,10 +7681,10 @@ hast-util-raw@^4.0.0:
     xtend "^4.0.1"
     zwitch "^1.0.0"
 
-hast-util-select@4.0.0:
-  version "4.0.0"
-  resolved "https://repox.jfrog.io/repox/api/npm/npm/hast-util-select/-/hast-util-select-4.0.0.tgz#0eda0933853792dd2865f54510db123b00d675c8"
-  integrity sha1-DtoJM4U3kt0oZfVFENsSOwDWdcg=
+hast-util-select@4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/hast-util-select/-/hast-util-select-4.0.2.tgz#ae3ef2860e02cda2ad3a2e72b47c1f5e8f44e9e7"
+  integrity sha512-8EEG2//bN5rrzboPWD2HdS3ugLijNioS1pqOTIolXNf67xxShYw4SQEmVXd3imiBG+U2bC2nVTySr/iRAA7Cjg==
   dependencies:
     bcp-47-match "^1.0.0"
     comma-separated-tokens "^1.0.0"
@@ -7695,7 +7695,7 @@ hast-util-select@4.0.0:
     hast-util-to-string "^1.0.0"
     hast-util-whitespace "^1.0.0"
     not "^0.1.0"
-    nth-check "^1.0.0"
+    nth-check "^2.0.0"
     property-information "^5.0.0"
     space-separated-tokens "^1.0.0"
     unist-util-visit "^2.0.0"
@@ -10679,12 +10679,19 @@ npmlog@^4.0.2:
     gauge "~2.7.3"
     set-blocking "~2.0.0"
 
-nth-check@^1.0.0, nth-check@^1.0.1, nth-check@^1.0.2, nth-check@~1.0.1:
+nth-check@^1.0.1, nth-check@^1.0.2, nth-check@~1.0.1:
   version "1.0.2"
   resolved "https://repox.jfrog.io/repox/api/npm/npm/nth-check/-/nth-check-1.0.2.tgz#b2bd295c37e3dd58a3bf0700376663ba4d9cf05c"
   integrity sha1-sr0pXDfj3VijvwcAN2Zjuk2c8Fw=
   dependencies:
     boolbase "~1.0.0"
+
+nth-check@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/nth-check/-/nth-check-2.0.0.tgz#1bb4f6dac70072fc313e8c9cd1417b5074c0a125"
+  integrity sha512-i4sc/Kj8htBrAiH1viZ0TgU8Y5XqCaV/FziYK6TBczxmeKm3AEFWqqF3195yKudrarqy7Zu80Ra5dobFjn9X/Q==
+  dependencies:
+    boolbase "^1.0.0"
 
 null-loader@^0.1.1:
   version "0.1.1"
