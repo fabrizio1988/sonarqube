@@ -5,8 +5,8 @@
   "repository": "SonarSource/sonarqube",
   "license": "LGPL-3.0",
   "dependencies": {
-    "@emotion/core": "10.0.28",
-    "@emotion/styled": "10.0.27",
+    "@emotion/core": "11.0.0",
+    "@emotion/styled": "11.0.0",
     "classnames": "2.2.6",
     "core-js": "3.6.4",
     "create-react-class": "15.6.3",
